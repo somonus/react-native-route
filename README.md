@@ -1,6 +1,10 @@
 # react-native-route
 
-## install
+react-native-route是react-native环境下的一个路由控制器，在开发模式下，默认页面会是一个list页面，展示路由中定义的所有页面，以方便调试进入任意页面。
+
+而在release模式则根据路由设置，展示根路由页面或者手动设置的default路由页面。
+
+## Install
 
 $ npm install react-native-route --save
 
