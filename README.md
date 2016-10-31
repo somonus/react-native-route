@@ -36,6 +36,7 @@ AppRegistry.registerComponent('app', () => app);
 
 #### 属性
 
+* *default* (bool): 当default设置为true时，当前页面将成为路由的根页面，默认为Router中的第一个页面。 
 * *path* (string): 某个页面的路径。 
 * *component* (object): 需要展示的页面组件。 
 * *animation* (object): 当前页面出现的动画。默认值FloatFromRight。可选值：PushFromRight, FloatFromRight, FloatFromLeft, FloatFromBottom, HorizontalSwipeJump, HorizontalSwipeJumpFromRight, VerticalUpSwipeJump, VerticalDownSwipeJump。
