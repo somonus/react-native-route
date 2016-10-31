@@ -1,0 +1,22 @@
+{
+  "name": "react-native-route",
+  "version": "0.1.0",
+  "description": "The router for react-native",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somonus/react-native-route.git"
+  },
+  "keywords": [
+    "react-native-route"
+  ],
+  "author": "somonus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/somonus/react-native-route/issues"
+  },
+  "homepage": "https://github.com/somonus/react-native-route#readme"
+}
