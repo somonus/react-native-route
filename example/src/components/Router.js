@@ -1,6 +1,6 @@
 import React, { Component, createClass } from 'react';
 import { Navigator, ListView, TouchableOpacity, Text } from 'react-native';
-import dismissKeyboard from 'dismissKeyboard';
+import dismissKeyboard from 'react-native/Libraries/Utilities/dismissKeyboard';
 import animationMap from './animationMap';
 
 export default class Router extends Component {
