@@ -11,35 +11,23 @@ import {
   Text,
   View
 } from 'react-native';
-import Echarts from 'native-echarts';
+import { Router, Route } from './src';
+import Test from './test';
+import Demo from './demo';
 
 export default class app2 extends Component {
   render() {
-    const option = {
-      title: {
-          text: 'ECharts 入门示例'
-      },
-      tooltip: {},
-      legend: {
-          data:['销量']
-      },
-      xAxis: {
-          data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
-      },
-      yAxis: {},
-      series: [{
-          name: '销量',
-          type: 'bar',
-          data: [5, 20, 36, 10, 10, 20]
-      }]
-    };
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native Echarts!
-        </Text>
-        <Echarts option={option} height={300} />
-      </View>
+      <Router>
+        <Route path='root' component={Test}>
+          <Route path='demo' component={Demo} animation='FloatFromRight'>
+            <Route path='demo' component={Demo} animation='FloatFromLeft'></Route>
+          </Route>
+        </Route>
+        <Route path='demo' component={Demo} animation='FloatFromBottom'>
+          <Route path='demo' component={Demo}></Route>
+        </Route>
+      </Router>
     );
   }
 }
