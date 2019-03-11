@@ -5,9 +5,9 @@ react-native-route是react-native环境下的一个路由控制器，在开发�
 而在release模式则根据路由设置，展示根路由页面或者手动设置的default路由页面。
 
 ## Install
-
+```
 $ npm install react-native-route --save
-
+```
 ## Usage
 
 ###用法
@@ -51,7 +51,7 @@ AppRegistry.registerComponent('app', () => app);
 * *params* (object): 选填参数，需要传给目标页面的数据，在目标页面中可通过`this.props.params`获取。 
 * *animation* (string): 选填参数，跳转到目标页面时的动画，在push中强行指定动画时，此动画将会覆盖在Route中指定的动画效果。 
 
-##Example
+## Example
 
 *run demo*
 
